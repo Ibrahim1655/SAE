@@ -8,10 +8,10 @@ header{
     height: 100px;
 }
 footer{
-    height: 50px;
+    height: 300px;
     padding-top: 30px;
     text-align: center;
-    border-top: 2px blueviolet solid;
+    margin-top: 5px blueviolet solid;
 }
 nav{
     background-color: rgb(98, 98, 133);
@@ -23,7 +23,7 @@ nav li{
 }   
 nav ul {
     margin: 0px;
-    padding: 0px
+    padding: 0px;
 } 
 .bandeau{
      display:table;
@@ -44,5 +44,38 @@ nav a{
     text-align: center;
     margin: 0;
     padding: 0;
-    z-index: 10; /
+    z-index: 10; 
 }
+
+p {
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 20px;
+}
+.images{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 20px 10px;
+}
+.bandeau-footer {
+    display:table;
+     margin: 0 auto;
+}
+.footer li{
+    list-style-type: none;
+    float: left;
+}   
+.footer ul {
+    margin: 0px;
+    padding: 0px
+}
+a :hover{
+    background-color: aquamarine ¨;
+    
+}
+
+
+
+
+
+
