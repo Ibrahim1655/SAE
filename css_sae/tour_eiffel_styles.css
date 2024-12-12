@@ -1,0 +1,273 @@
+
+body {
+  
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(187, 158, 119);
+     background-position: center; 
+     color: #333333;
+}
+
+/* Header */
+header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+nav{
+    background-color: rgb(98, 98, 133);
+    width: 100%;
+}
+nav li{
+    list-style-type: none;
+    float: left;
+}   
+nav ul {
+    margin: 0px;
+    padding: 0px
+} 
+.bandeau{
+     display:table;
+     margin: 0 auto;
+}
+nav a{
+    display:inline-block;
+    padding:15px 25px;
+    font-size: 15px;
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+/* Section Hero */
+.hero {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hero video {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Section Content */
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 2rem;
+    color: #000000;
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.infos {
+    
+    display: flex;
+    justify-content: space-between; /* Espace équilibré entre les deux tableaux */
+    align-items: flex-start;
+    gap: 20px; /* Espacement entre les tableaux */
+    margin-bottom: 20px; /* Espace sous la section */
+}
+.stats h2 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+
+
+}
+.horaires h2 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+    
+   
+
+.stats, .horaires {
+    flex: 1; 
+    max-width: 45%; 
+    text-align: center;
+    background-image: #ffffff; 
+   
+    border-radius: 10px; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    height: auto; 
+
+}
+.stats table, .horaires table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto; 
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse;
+    margin-top: 0px;
+}
+
+th, td {
+    border: 1px solid #ccc; /* Bordure entre les cellules */
+    padding: 8px;
+    text-align: left;
+    background-color: #ffffffa9; /* Couleur de fond translucide */
+}
+
+thead {
+    background-color: #f4f4f4; 
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+
+.histoire {
+    padding: 50px 20px; /* Espacement autour de la section */
+    background-color: #f9f9f9; /* Fond doux pour contraste */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    border-radius: 20px; /* Coins arrondis pour le conteneur */
+    margin: 20px auto; /* Centrage de la section */
+    max-width: 1200px; /* Limite de largeur pour un contenu bien aligné */
+}
+
+.histoire h2 {
+    text-align: center;
+    font-size: 2.5rem; 
+    color: #333333; 
+    margin-bottom: 30px; 
+    font-family: 'Georgia', serif; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+}
+
+.monument {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Permet le retour à la ligne sur petits écrans */
+    justify-content: center; /* Centrage horizontal des éléments */
+}
+
+.texte {
+    background-color: rgba(255, 255, 255, 0.9); 
+    color: #444444; 
+    border-radius: 20px; 
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    max-width: 600px; 
+    flex: 1; 
+}
+
+img {
+    width: 300px;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 20px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation au survol */
+}
+
+img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
+}
+.bouton {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100px; 
+}
+.bouton-reservation {
+    background-color: #ffa60077;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.bouton-reservation:hover {
+    background-color: #a9a25397;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bouton-reservation:active {
+    background-color: #004085;
+    transform: scale(0.98);
+}
+
+
+/* Footer */
+footer {
+    background-color: #1007079f;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+
+color: #f1f1f1;
+}
+
+footer .logor img {
+    width: 50px; 
+    
+  
+height: 50px; 
+    object-fit: contain; 
+    margin: 5px; 
+}
+footer .logoinsta img {
+
+width: 70px;
+height: 70px;
+
+}
+
+
+
+
+
+
