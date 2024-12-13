@@ -21,21 +21,22 @@ header img {
     height: auto;
 }
 nav{
-    background-color: rgb(98, 98, 133);
+    height: 50px;
     width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(98, 98, 133);
 }
-nav li{
-    list-style-type: none;
-    float: left;
-}   
-nav ul {
-    margin: 0px;
-    padding: 0px
-} 
-.bandeau{
-     display:table;
-     margin: 0 auto;
+   
+ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: space-around;
 }
+
 nav a{
     display:inline-block;
     padding:15px 25px;

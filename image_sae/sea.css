@@ -1,0 +1,264 @@
+header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+header img {
+    max-width: 100%;
+    height: auto;
+}
+nav{
+    background-color: rgb(98, 98, 133);
+    width: 100%;
+}
+nav li{
+    list-style-type: none;
+    float: left;
+}   
+nav ul {
+    margin: 0px;
+    padding: 0px
+} 
+.bandeau{
+     display:table;
+     margin: 0 auto;
+}
+nav a{
+    display:inline-block;
+    padding:15px 25px;
+    font-size: 15px;
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+
+.coliséee{
+    width: 750px;
+    height: 400px;
+    margin-top:50px;
+    padding-left: 350px;
+}
+
+
+html{
+    background-color: lightsteelblue;
+}
+
+h2{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-style: oblique;
+    text-decoration: underline;
+    
+}
+
+.slide{
+    float: left;
+    margin-top: 75px;
+}
+.slides{
+    width:calc(9000px * 3);
+    animation: glisse 10s infinite;
+    
+}
+
+.slider{
+    overflow: hidden;
+    width:900px;
+    margin:0 auto;
+    padding-top: 15px;
+}
+@keyframes glisse {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-900px);
+    }
+    43% {
+        transform: translateX(-900px);
+    }
+    66% {
+        transform: translateX(-1800px);
+    }
+    76% {
+        transform: translateX(-1800px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.textimage{
+    display: flex;
+    flex: 1;
+}
+.text{
+    flex: 1;
+    padding-left: 40px;
+    padding-right: 140px;
+    padding-top: -25px;
+    font-size: larger;
+}
+.image{
+    padding-top: 20px;
+}
+
+
+.home-packages .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes égales */
+    gap: 2rem;
+}
+
+/* Style des boîtes */
+.home-packages .box-container .box {
+    border: 1px solid #ddd; /* Remplace var(border) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Remplace var(box-shadow) */
+    background: #fff; /* Remplace var(white) */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-packages .box-container .box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Zone image */
+.home-packages .box-container .box .z {
+    height: 25rem;
+    overflow: hidden;
+}
+
+.home-packages .box-container .box .z img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Effet hover sur l'image */
+.home-packages .box-container .box:hover .z img {
+    transform: scale(1.1);
+}
+
+/* Contenu */
+.home-packages .box-container .box .content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.home-packages .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: #000; /* Remplace var(black) */
+    margin-bottom: 1rem;
+}
+
+.home-packages .box-container .box .content p {
+    font-size: 1.5rem;
+    color: #555; /* Remplace var(light-black) */
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+/* Bouton */
+.home-packages .btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.home-packages .btn:hover {
+    background: #555;
+    color: #fff;
+}
+
+/* Titre principal */
+.home-packages .heading-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .home-packages .box-container {
+        grid-template-columns: 1fr 1fr; /* Deux colonnes sur les petits écrans */
+    }
+}
+
+@media (max-width: 480px) {
+    .home-packages .box-container {
+        grid-template-columns: 1fr; /* Une colonne sur les très petits écrans */
+    }
+}
+
+.home-packages .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20rem, 1fr)); /* Réduit la largeur minimale des boîtes */
+    gap: 2em;
+}
+
+
+.video-background {
+    position:relative;
+    width: 100%;
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    overflow:hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55%;
+    height: 55%;
+    object-fit: cover; /* Permet à la vidéo de couvrir toute la zone sans distorsion */
+    z-index: -1; /* Place la vidéo en arrière-plan */
+}
+
+.heading-title{
+    text-decoration: underline;
+
+}
+
+
+
+
+.video-background {
+    flex: 1; /* La vidéo occupe 2 parts de l'espace */
+    max-width: 60%; /* Limite la largeur de la vidéo */
+    height: auto; /* Conserve la hauteur proportionnelle */ 
+}
+
+.video-background video {
+    width: 100%; /* La vidéo occupe tout l'espace disponible */
+    height: auto; /* Garde les proportions */
+    object-fit: cover; /* Assure que la vidéo s'adapte bien */
+}
+
+.text {
+    flex: 1; /* Le texte occupe 1 part de l'espace */
+    padding: 20px; /* Ajoute un peu d'espace intérieur */
+    font-size: 1.2rem; /* Agrandit légèrement le texte */
+    line-height: 1.6; /* Améliore la lisibilité */
+    padding-bottom: 200px;
+}
+
+.logoinsta, .X_logo {
+    width: 50px; /* Ajustez la largeur comme vous voulez */
+    height: auto; /* Conserve les proportions */
+    text-align: center;
+}
