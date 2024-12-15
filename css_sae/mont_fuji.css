@@ -5,6 +5,10 @@ html{
 header{
     height: 100px;
 }
+.vptourslogo{
+    width:300 ;
+    height: 100px;
+}
 nav{
     height: 50px;
     width: 100%;
