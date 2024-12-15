@@ -51,6 +51,11 @@ nav a{
   }
 .slide{
     float: left;
+    
+}
+.imgslide{
+    width: 800px;
+    height: 600px;
 }
 .slides{
     width:calc(9000px * 3);
