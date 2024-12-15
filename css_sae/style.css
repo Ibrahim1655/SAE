@@ -7,11 +7,10 @@ body{
 header{
     height: 100px;
 }
-footer{
-    height: 300px;
-    padding-top: 30px;
+footer {
+    background-color: rgb(98, 98, 133);
     text-align: center;
-    margin-top: 5px blueviolet solid;
+    margin-top: 20px;
 }
 nav{
     height: 50px;

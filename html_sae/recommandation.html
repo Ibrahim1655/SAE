@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Synthèse</title>
+    <link href="../css_sae/recommandation.css" rel="stylesheet" href="recommandation.css">
+</head>
+<body>
+    <h1 class="logo">
+        <img class="" src="../image_sae/vptours.png" alt="Logo VP Tours" width="300px">
+    </h1>
+</header>
+<nav class="liste">
+    <div class="bandeau">
+        <ul>
+        <li class="tour_eiffel"><a href="tour_eiffel.html">Tour Eiffel</a></li>
+        <li class="mont_fuji"><a href="mont_fuji.html">Mont Fuji</a></li>
+        <li class="colisée"><a href="colisée.html"> Colisée</a></li>
+        <li class="recommendation"><a href="recommandation.html">Recommandation</a></li>
+    </ul> 
+    </div>   
+</nav>
+
+
+    <main>
+        <section class="synthese">
+            <h2>Notre avis : La Tour Eiffel</h2>
+            <p>
+                La Tour Eiffel est, sans conteste, le site touristique à privilégier pour toute visite à Paris. 
+                Emblème de la capitale, elle offre une vue panoramique inégalée et une immersion dans l’histoire 
+                fascinante de l'architecture française. Accessible à tous, la Tour Eiffel est une expérience unique 
+                pour les visiteurs de tous âges.
+            </p>
+            <a href="https://www.toureiffel.paris/fr" class="synthese-button">En savoir plus</a>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contactez-nous</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Nom complet :</label>
+                <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+                
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+                
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" placeholder="Posez votre question ou demandez des informations" required></textarea>
+                
+                <button type="submit" class="contact-button">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Retour à la <a href="index.html">page d'accueil</a></p>
+        <p>© 2024 Sites Touristiques. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
