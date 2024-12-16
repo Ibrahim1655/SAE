@@ -1,42 +1,55 @@
 
 body {
   
+    background-image: url('../image_sae/fond.jpg'); 
+    background-size: cover; /*couvre l'écran */
+    background-repeat: no-repeat; 
+    background-attachment: fixed; /* fixe lors du défilement */
+    background-position: center; 
     font-family: Arial, sans-serif;
+    color: #333; 
     margin: 0;
     padding: 0;
-    background-color: rgb(187, 158, 119);
-     background-position: center; 
-     color: #333333;
 }
 
 /* Header */
+.logo {
+    width: 305px;
+    margin-left: 35%;
+
+}
 header {
     background-color: #f1f1f1;
     padding: 20px;
     text-align: center;
+    height: 100px;
 }
+a:hover {
+    color: hotpink;
+    transform: scale(1.1); /* Zoom léger */
+  }
 
 header img {
     max-width: 100%;
     height: auto;
 }
 nav{
-    height: 50px;
-    width: 100%;
-    position: sticky;
-    top: 0px;
     background-color: rgb(98, 98, 133);
+    width: 100%;
 }
-   
-ul{
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    justify-content: space-around;
-}
+nav li{
+    list-style-type: none;
+    float: left;
+}   
+nav ul {
+    margin: 0px;
+    padding: 0px
+} 
 
+.bandeau{
+     display:table;
+     margin: 0 auto;
+}
 nav a{
     display:inline-block;
     padding:15px 25px;
@@ -59,29 +72,41 @@ nav a{
     border-radius: 10px;
 }
 
-/* Section Content */
-.content {
+/* Section Contenu */
+.contenu {
+    
+   
     text-align: center;
-    padding: 20px;
-}
-
-.content h2 {
-    font-size: 2rem;
-    color: #000000;
-}
-
-.content p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin: 10px 0;
-}
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent noir */
+        border-radius: 10px; 
+        width: 80%; /* Largeur limitée */
+        
+       
+    margin: 20px auto; /* Centre la section */
+    }
+    
+    .contenu h2 {
+        font-size: 2rem;
+        color: #ffffff; /* fond */
+        
+       
+    margin-bottom: 15px;
+    }
+    
+    .contenu p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin: 10px 0;
+        color: #ffffff;
+    }
 
 .infos {
-    
+   
     display: flex;
-    justify-content: space-between; /* Espace équilibré entre les deux tableaux */
+    justify-content: space-between; /* Espace entre les deux tableaux */
     align-items: flex-start;
-    gap: 20px; /* Espacement entre les tableaux */
+    gap: 20px; /* Espace */
     margin-bottom: 20px; /* Espace sous la section */
 }
 .stats h2 {
@@ -106,8 +131,6 @@ nav a{
     flex: 1; 
     max-width: 45%; 
     text-align: center;
-    background-image: #ffffff; 
-   
     border-radius: 10px; 
     padding: 10px; 
     box-sizing: border-box; 
@@ -127,10 +150,10 @@ table {
 }
 
 th, td {
-    border: 1px solid #ccc; /* Bordure entre les cellules */
+    border: 1px solid #ccc; 
     padding: 8px;
     text-align: left;
-    background-color: #ffffffa9; /* Couleur de fond translucide */
+    background-color: #ffffffa9; 
 }
 
 thead {
@@ -145,12 +168,11 @@ h2 {
 }
 
 .histoire {
-    padding: 50px 20px; /* Espacement autour de la section */
-    background-color: #f9f9f9; /* Fond doux pour contraste */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ombre subtile */
-    border-radius: 20px; /* Coins arrondis pour le conteneur */
-    margin: 20px auto; /* Centrage de la section */
-    max-width: 1200px; /* Limite de largeur pour un contenu bien aligné */
+    padding: 50px 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: 1200px; 
 }
 
 .histoire h2 {
@@ -167,33 +189,31 @@ h2 {
     display: flex;
     align-items: center;
     gap: 20px;
-    flex-wrap: wrap; /* Permet le retour à la ligne sur petits écrans */
-    justify-content: center; /* Centrage horizontal des éléments */
+    flex-wrap: wrap; 
+    justify-content: center; 
 }
 
 .texte {
-    background-color: rgba(255, 255, 255, 0.9); 
-    color: #444444; 
+    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent noir */
+    color: #ffffff; 
     border-radius: 20px; 
     text-align: center;
     padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
     max-width: 600px; 
     flex: 1; 
 }
+
 
 img {
     width: 300px;
     height: auto;
     object-fit: cover; 
     border-radius: 20px; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation au survol */
 }
 
 img:hover {
     transform: scale(1.05); 
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
 }
 .bouton {
     display: flex;
@@ -202,7 +222,7 @@ img:hover {
     height: 100px; 
 }
 .bouton-reservation {
-    background-color: #ffa60077;
+    background-color: #69645a77;
     color: #fff;
     font-size: 1.2rem;
     font-weight: bold;
@@ -212,7 +232,6 @@ img:hover {
     text-transform: uppercase;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     display: inline-block;
     text-align: center;
     margin: 20px 0;
@@ -221,18 +240,131 @@ img:hover {
 .bouton-reservation:hover {
     background-color: #a9a25397;
     transform: scale(1.05);
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .bouton-reservation:active {
     background-color: #004085;
     transform: scale(0.98);
 }
+/* Section Anecdotes */
+.anecdotes {
+    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent noir */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: left;
+}
+
+.anecdotes h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #e63946;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.anecdotes ul {
+    list-style-type: disc;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.anecdotes li {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    line-height: 1.8;
+    position: relative;
+    padding-left: 25px;
+}
+
+.anecdotes li::before {
+    content: '✓'; /* Ajout d'une coche avant chaque élément */
+    position: absolute;
+    left: 0;
+    color: #6ae639; /* couleur encoche */
+    font-size: 1.2rem;
+}
+
+/* Section Expériences */
+.experiences {
+    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent noir */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.experiences h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.experiences article {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.experiences h3 {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.experiences p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6; /* Hauteur de ligne */
+}
+
+/* Effets interactifs */
+.anecdotes li:hover, .experiences article:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease; /* Transition douce */
+}
+
+.experiences h3:hover {
+    color: #e63946;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .anecdotes, .experiences {
+        width: 90%;
+    }
+
+    .anecdotes h2, .experiences h2 {
+        font-size: 1.8rem;
+    }
+
+    .anecdotes li, .experiences p {
+        font-size: 1rem;
+    }
+
+    .experiences h3 {
+        font-size: 1.3rem; /* Réduire la taille */
+    }
+}
 
 
 /* Footer */
 footer {
-    background-color: #1007079f;
+    background-color: rgb(98, 98, 133);
     text-align: center;
     padding: 10px;
     margin-top: 20px;
@@ -244,7 +376,7 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: underline;  /* Souligner les liens au survol */
 }
 
 footer p {
@@ -262,7 +394,7 @@ height: 50px;
 }
 footer .logoinsta img {
 
-width: 70px;
+width: 70px; /* Taille logo */
 height: 70px;
 
 }

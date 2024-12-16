@@ -7,11 +7,14 @@ header img {
     max-width: 100%;
     height: auto;
 }
-
-.logo:hover{
-    background-color: rgb(157, 157, 181);
-
+.logosae{
+    width: 300px;
 }
+
+a:hover {
+    color: lightsteelblue;
+    transform: scale(1.1); /* Zoom léger */
+  }
 
 
 nav{
@@ -69,6 +72,10 @@ h2 {
     padding-top: 30px;
     padding-bottom: 60px;
     
+}
+.imgslide{
+    width: 900px;
+    height: 600px;
 }
 .slides {
     width: calc(9000px * 3);
