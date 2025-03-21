@@ -60,7 +60,7 @@ nav a{
     height: 600px;
 }
 .slides{
-    width:calc(9000px * 3);
+    width:calc(800px * 3);
     animation: glisse 10s infinite;
 }
 .paragraphes{
@@ -70,7 +70,7 @@ nav a{
     padding: 20px;
 }
 .paragraphe1et2 {
-    width: 30%;
+    width: 30%;  
     margin-top: 30px;
     padding: 2px;
     font-weight: bold;
